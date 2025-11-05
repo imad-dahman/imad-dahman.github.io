@@ -1,0 +1,198 @@
+.contact {
+    background: var(--bg-secondary);
+    border-radius: var(--border-radius);
+    margin-bottom: 40px;
+  }
+  
+  .job-search-message {
+    background: linear-gradient(135deg, rgba(0, 225, 255, 0.1), rgba(33, 150, 243, 0.1));
+    border: 2px solid rgba(0, 225, 255, 0.3);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 40px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  
+  .message-icon {
+    font-size: 2.5rem;
+    color: var(--accent-cyan);
+    flex-shrink: 0;
+  }
+  
+  .job-search-message p {
+    color: var(--text-primary);
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin: 0;
+  }
+  
+  .contact-content {
+    max-width: 600px;
+  }
+  
+  .contact-direct {
+    background: var(--bg-card);
+    padding: 32px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  
+  .contact-direct h3 {
+    font-size: 1.3rem;
+    color: var(--text-primary);
+    margin-bottom: 20px;
+  }
+  
+  .email-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 32px;
+    background: linear-gradient(135deg, var(--accent-cyan), var(--accent-blue));
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: var(--transition);
+  }
+  
+  .email-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 32px rgba(0, 225, 255, 0.5);
+  }
+  
+  .email-link i {
+    font-size: 1.5rem;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .form-group label {
+    font-weight: 500;
+    color: var(--text-primary);
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    background: var(--bg-card);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 12px 16px;
+    color: var(--text-primary);
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    transition: var(--transition);
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent-cyan);
+    box-shadow: 0 0 20px rgba(0, 225, 255, 0.2);
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+  }
+  
+  .submit-btn {
+    background: linear-gradient(135deg, var(--accent-cyan), var(--accent-blue));
+    color: white;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    align-self: flex-start;
+  }
+  
+  .submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 225, 255, 0.4);
+  }
+  
+  .contact-info {
+    margin-top: 32px;
+    padding-top: 32px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--text-secondary);
+  }
+  
+  .contact-info a {
+    color: var(--accent-cyan);
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition);
+  }
+  
+  .contact-info a:hover {
+    color: var(--accent-blue);
+  }
+  
+  .toast {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    background: linear-gradient(135deg, var(--accent-cyan), var(--accent-blue));
+    color: white;
+    padding: 16px 24px;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 225, 255, 0.4);
+    animation: slideIn 0.3s ease;
+    z-index: 1000;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(400px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .job-search-message {
+      flex-direction: column;
+      padding: 24px;
+    }
+  
+    .message-icon {
+      font-size: 2rem;
+    }
+  
+    .job-search-message p {
+      font-size: 1rem;
+    }
+  
+    .email-link {
+      font-size: 1rem;
+      padding: 14px 24px;
+    }
+  
+    .toast {
+      bottom: 20px;
+      right: 20px;
+      left: 20px;
+    }
+  }
+  
