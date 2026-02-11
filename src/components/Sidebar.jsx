@@ -56,13 +56,13 @@ function Sidebar() {
           />
 
           <h1 className="profile-name">Imad Dahman</h1>
-          <p className="profile-subtitle">Développeur Full-Stack </p>
+          <p className="profile-subtitle">Junior Full-Stack Developer </p>
 
           <p className="profile-bio">
-          Développeur web passionné avec une approche orientée résultats.
-           J’aime transformer les idées en applications modernes, performantes et bien conçues.
-           Curieux et motivé, je combine logique et créativité pour concevoir des solutions efficaces,
-           aussi bien en front-end qu’en back-end.
+           Développeur Full-Stack diplômé en Informatique de Gestion (EPFC, Bruxelles).
+Spécialisé en développement d’applications web modernes avec React, Node.js, PHP et MySQL.
+Expérience en développement d’API REST, systèmes d’authentification (OAuth) et optimisation SEO.
+Je conçois des solutions performantes, sécurisées et orientées utilisateur.
           </p>
 
           <div className="social-links">
